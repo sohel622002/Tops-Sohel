@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel Project</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      font-size: 1.5rem;
+      display: grid;
+      place-items: center;
+    }
+    .table-wrapper{
+      background-color: green;
+      padding: 20px;
+    }
+    .table-wrapper h3{
+      text-align: center;
+    }
+    table {
+      color: white;
+      border-collapse: collapse;
+      border-color: white;
+    }
+    td {
+      text-align: center;
+      height: 75px;
+    }
+    .red{
+      background-color: #e32121;
+    }
+    .black{
+      background-color: black;
+    }
+    .span2 {
+      width: 50px;
+    }
+    .spna3 {
+      width: 75px;
+    }
+    .span4 {
+      width: 100px;
+    }
+  </style>
+  <body>
+    <div class="table-wrapper">
+      <h3>
+        European Roulette
+      </h3>
+      <table border="2">
+        <tr>
+          <td class="span2" rowspan="5">0</td>
+          <td class="spna3 red">3</td>
+          <td class="spna3 black">6</td>
+          <td class="span2 red">9</td>
+          <td class="span4 red">12</td>
+          <td class="span2 black">15</td>
+          <td class="span2 red">18</td>
+          <td class="span2 red">21</td>
+          <td class="span2 black">24</td>
+          <td class="span2 red">27</td>
+          <td class="span2 red">30</td>
+          <td class="spna3 black">33</td>
+          <td class="spna3 red">36</td>
+          <td class="span4">2to1</td>
+        </tr>
+        <tr>
+          <td class="spna3 black">2</td>
+          <td class="spna3 red">5</td>
+          <td class="span2 black">8</td>
+          <td class="span4 black">11</td>
+          <td class="span2 red">14</td>
+          <td class="span2 black">17</td>
+          <td class="span2 black">20</td>
+          <td class="span2 red">23</td>
+          <td class="span2 black">26</td>
+          <td class="span2 black">29</td>
+          <td class="spna3 red">32</td>
+          <td class="spna3 black">35</td>
+          <td class="span4">2to2</td>
+        </tr>
+        <tr>
+          <td class="spna3 red">1</td>
+          <td class="spna3 black">4</td>
+          <td class="span2 red">7</td>
+          <td class="span4 black">10</td>
+          <td class="span2 black">13</td>
+          <td class="span2 red">16</td>
+          <td class="span2 red">19</td>
+          <td class="span2 black">22</td>
+          <td class="span2 red">25</td>
+          <td class="span2 black">28</td>
+          <td class="spna3 black">31</td>
+          <td class="spna3 red">34</td>
+          <td class="span4">2to3</td>
+        </tr>
+        <tr>
+          <td colspan="4">1st12</td>
+          <td colspan="4">2nd12</td>
+          <td colspan="4">3rd12</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="2">1to18</td>
+          <td colspan="2">EVEN</td>
+          <td colspan="2" class="red"></td>
+          <td colspan="2" class="black"></td>
+          <td colspan="2">OOD</td>
+          <td colspan="2">19to36</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
