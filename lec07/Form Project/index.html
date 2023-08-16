@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <style>
+    tr td input,
+    select {
+      font-size: 15px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid grey;
+      padding: 0.5em;
+    }
+  </style>
+  <body
+    style="
+      background-color: blueviolet;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    "
+  >
+    <table style="border: 10px solid white">
+      <tr>
+        <td style="height: 469.2px;">
+          <img
+            src="form.jpg"
+            alt="Form-Image"
+            style="height: 100%;"
+          />
+        </td>
+        <td style="background-color: white;">
+          <form
+            style="
+              height: 400px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding: 20px;
+              align-items: center;
+            "
+          >
+            <table cellspacing="10">
+              <tr>
+                <td colspan="2">
+                  <center>
+                    <h1>REGISTRATION FORM</h1>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    style="width: auto"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    style="width: auto"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    placeholder="Usename"
+                    style="width: calc(100% - 1em)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <select style="width: 100%">
+                    <option value="Gender">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    style="width: calc(100% - 1em)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    placeholder="Re Enter Password"
+                    style="width: calc(100% - 1em)"
+                    ;
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <center>
+                    <button
+                      style="
+                        font-size: 18px;
+                        background-color: black;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        cursor: pointer;"
+                    >
+                      Submit
+                    </button>
+                  </center>
+                </td>
+              </tr>
+            </table>
+            <div></div>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
