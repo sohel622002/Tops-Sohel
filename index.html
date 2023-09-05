@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CSS 02</title>
+    <title>Document</title>
 </head>
+<style>
+    .container{
+        max-width: 600px;
+        margin-inline: auto;
+    }
+    .flex{
+        display: flex;
+    }
+    .flex > div{
+        width: 33%;
+        border-radius: 5px;
+        text-align: center;
+        padding: 50px 0;
+        font-size: 3rem;
+        color: white;
+    }
+</style>
 <body>
-    <div class="image-container">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
-        <div>05</div>
-    </div>
-    <div class="content-container">
-        <h2>This is some Content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, quod deleniti voluptate dignissimos amet reiciendis nulla quasi cumque. Nesciunt, reiciendis.</p>
-    </div>
-    <div class="image-container-02">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
-        <div>05</div>
-    </div>
-    <div class="content-container">
-        <h2>This is also some content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, quod deleniti voluptate dignissimos amet reiciendis nulla quasi cumque. Nesciunt, reiciendis.</p>
+    <div class="container">
+        <div class="flex">
+            <div style="background-color: red;">01</div>
+            <div style="background-color: blue;">02</div>
+            <div style="background-color: yellow;">03</div>
+        </div>
+        <div class="flex">
+            <div style="background-color: green;">04</div>
+            <div style="background-color: cyan;">05</div>
+            <div style="background-color: orange;">06</div>
+        </div>
+        <div class="flex">
+            <div style="background-color: pink;">07</div>
+            <div style="background-color: purple;">08</div>
+            <div style="background-color: brown;">09</div>
+        </div>
+        <div class="flex">
+            <div style="background-color: aqua;">10</div>
+        </div>
     </div>
 </body>
 </html>

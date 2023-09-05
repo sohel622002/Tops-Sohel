@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cake (Flex)</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       img{
+        width: 280px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+       }
+       .container{
+        padding: 2em;
+       }
+       .container > div{
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+       }
+       .container > div p{
+        width: 280px;
+       }
+       .container > div h3{
+        font-size: 1.5rem;
+       }
+       .pink{
+        background-color: rgb(253, 102, 127);
+        color: white;
+       }
+       .flex{
+        display: flex;
+        gap: 20px;
+       }
+       .flex > div{
+        flex: 1;
+       }
+       .secondary > div:hover{
+        background-color: rgb(253, 102, 127);
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="container flex pink">
+        <div>
+            <img src="01.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+        <div>
+            <img src="02.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+        <div>
+            <img src="03.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+    </div>
+    <div class="container flex secondary">
+        <div>
+            <img src="04.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+        <div>
+            <img src="05.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+        <div>
+            <img src="06.jpg" alt="cake01">
+            <h3>Hazelnut Cake</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda!</p>
+        </div>
+    </div>
+</body>
+</html>
