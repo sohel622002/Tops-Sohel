@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    margin-bottom: -8px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icon{
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 20px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+section{
+    min-height: 100vh;
+}
+
+.home{
+    position: relative;
+}
+
+.band-images{
+    width: 100%;
+    height: calc(100vh - 55px);
+    object-fit: cover;
+}
+
+.band-desc{
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 40px;
+    text-align: center;
+}
+
+.band-desc h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.band-container,
+.tour-container{
+    width: min(1000px, 95vw);
+    margin-inline: auto;
+}
+
+.center{
+    text-align: center;
+}
+.band-container h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.center:nth-child(2){
+    font-size: 1rem;
+    font-style: italic;
+    color: grey;
+    margin-bottom: 10px;
+}
+.pera{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.band-members{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.band-member h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.band-member img{
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#tour{
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.tour-container h1{
+    margin-bottom: 10px;
+}
+
+.booking-months{
+    max-width: 760px;
+    background-color: white;
+    color: black;
+    margin-inline: auto;
+}
+.month{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.month:last-child{
+    border-bottom: none;
+}
+
+.month:last-child::before{
+    content: '3';
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    border-radius: 50%;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sold::before{
+    content: 'Sold Out';
+    background-color: red;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buy_detail{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.buy-tickets{
+    max-width: 760px;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+.buy-tickets-container{
+    display: flex;
+    gap: 20px;
+}
+.buy-tickets-container > div{
+    flex: 1;
+}
+.buy-tickets_image{
+    width: 100%;
+}
+.buy_btn,
+.send{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.09rem;
+    padding: 5px 10px;
+}
+
+
+/* contact container */
+
+#contact{
+    padding-block: 80px;
+}
+
+.contect-container{
+    width: min(1000px, 95vw);
+    margin-inline: auto;
+}
+
+.contect-container > h1{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.contact-form{
+    max-width: 760px;
+    margin-inline: auto;
+    margin-top: 35px;
+    display: flex;
+}
+.contact-form > div{
+    flex: 1;
+}
+
+.input{
+    border: 1px solid lightgray;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.first-last-input{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.send-btn{
+    max-width: 760px;
+    margin-inline: auto;
+    text-align: end;
+    padding-top: 20px;
+}
+.contact-form-detail > div{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.street-view{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+footer{
+    padding-bottom: 50px;
+}
+
+.footer-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: rgb(130, 130, 130);
+}
+.footer-name{
+    text-align: center;
+    color: rgb(130, 130, 130);
+    margin-top: 10px;
+}
