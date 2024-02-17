@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Counter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        font-family: sans-serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .counter {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 20px 30px;
+      }
+      .counter-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .numbers {
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter-container">
+      <div class="employies counter">
+        <span id="employe-value" class="numbers" data-value="115">000</span>
+        <h2>HappyEmployies</h2>
+      </div>
+      <div class="projects counter">
+        <span id="projects-value" class="numbers" data-value="740">000</span>
+        <h2>Projects Completed</h2>
+      </div>
+      <div class="ongoing-projects counter">
+        <span id="ongoing-projects-value" class="numbers" data-value="21"
+          >00</span
+        >
+        <h2>Ongoing Projects</h2>
+      </div>
+    </div>
+
+    <script>
+      const elements = document.querySelectorAll(".numbers");
+      let interval = 4000;
+
+      elements.forEach(element => {
+          let counter = 0
+          let endvalue = parseInt(element.getAttribute("data-value"))
+          let duration = Math.floor(interval / endvalue)
+          const count = setInterval(function(){
+            counter++
+            element.innerText = counter + '+'
+            if(counter == endvalue){
+                clearInterval(count)
+            }
+          }, duration);
+      })
+
+
+    </script>
+  </body>
+</html>
