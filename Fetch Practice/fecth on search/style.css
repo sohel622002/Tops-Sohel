@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 30px;
+  padding-block: 50px;
+}
+
+section {
+  width: 80%;
+  max-width: 600px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.pills {
+  flex: 1 0 190px;
+  display: inline-flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 10px;
+}
+
+#search-input {
+  flex: 1;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.pills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pills > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pills > div > img {
+  width: 24px;
+  aspect-ratio: 1;
+}
+
+.pills > div > span {
+  display: inline-block;
+  font-weight: 500;
+  color: white;
+  text-wrap: nowrap;
+  max-width: 100px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.pills > .cross {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.suggestions{
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.suggestions:empty{
+  border: none;
+}
+
+.suggestion-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-wrapper:nth-child(2n){
+    background-color: rgb(241, 241, 241);
+}
+
+.suggestion-wrapper:hover{
+    background-color: rgb(217, 217, 217);
+}
+
+.suggestion-wrapper > img{
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.suggestion-wrapper > span{
+    font-weight: 600;
+}
+
+.suggestions{
+    display: flex;
+    flex-direction: column;
+}
